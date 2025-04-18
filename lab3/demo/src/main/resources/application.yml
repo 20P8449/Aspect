@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/p2pdb
+    username: p2puser
+    password: p2ppass
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

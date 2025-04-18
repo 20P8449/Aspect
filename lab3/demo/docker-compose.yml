@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:15
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: p2pdb
+      POSTGRES_USER: p2puser
+      POSTGRES_PASSWORD: p2ppass
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
